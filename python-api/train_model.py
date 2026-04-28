@@ -3,7 +3,8 @@ import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("./student_data.csv")
+url = "https://raw.githubusercontent.com/rajendra0968jangid/ML-Node-Project/main/student_performance.csv"
+df = pd.read_csv(url)
 
 X = df[["Attendance", "Test_Marks", "Assignment_Marks", "Practical_Marks"]]
 Y = df["Final_Marks"]
