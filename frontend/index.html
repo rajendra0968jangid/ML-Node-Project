@@ -10,6 +10,7 @@
     <input type="number" id="attendance" placeholder="Attendance" required><br><br>
     <input type="number" id="test" placeholder="Test Marks" required><br><br>
     <input type="number" id="assignment" placeholder="Assignment Marks" required><br><br>
+    <input type="number" id="Practical_Marks" placeholder="Practical Marks" required><br><br>
 
     <button type="submit">Predict</button>
 </form>
@@ -28,7 +29,8 @@ document.getElementById("form").addEventListener("submit", async (e) => {
         body: JSON.stringify({
             Attendance: Number(document.getElementById("attendance").value),
             Test_Marks: Number(document.getElementById("test").value),
-            Assignment_Marks: Number(document.getElementById("assignment").value)
+            Assignment_Marks: Number(document.getElementById("assignment").value),
+            Practical_Marks: Number(document.getElementById("Practical_Marks").value)
         })
     });
 
